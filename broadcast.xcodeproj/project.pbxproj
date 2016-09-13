@@ -13,7 +13,47 @@
 		271CA3EE1D758EAB00D60691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271CA3EC1D758EAB00D60691 /* Main.storyboard */; };
 		271CA3F01D758EAB00D60691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271CA3EF1D758EAB00D60691 /* Assets.xcassets */; };
 		271CA3F31D758EAB00D60691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271CA3F11D758EAB00D60691 /* LaunchScreen.storyboard */; };
+		271CA4011D758EE600D60691 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271CA4001D758EE600D60691 /* ReplayKit.framework */; };
+		271CA4061D758EE600D60691 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271CA4051D758EE600D60691 /* SampleHandler.swift */; };
+		271CA40D1D758EE600D60691 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271CA4001D758EE600D60691 /* ReplayKit.framework */; };
+		271CA40F1D758EE600D60691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271CA40E1D758EE600D60691 /* UIKit.framework */; };
+		271CA4121D758EE600D60691 /* BroadcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271CA4111D758EE600D60691 /* BroadcastViewController.swift */; };
+		271CA4151D758EE600D60691 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271CA4131D758EE600D60691 /* MainInterface.storyboard */; };
+		271CA4191D758EE600D60691 /* broadcastexUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 271CA40C1D758EE600D60691 /* broadcastexUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		271CA41C1D758EE600D60691 /* broadcastex.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 271CA3FE1D758EE600D60691 /* broadcastex.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		271CA4171D758EE600D60691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271CA3DB1D758EAB00D60691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 271CA40B1D758EE600D60691;
+			remoteInfo = broadcastexUI;
+		};
+		271CA41A1D758EE600D60691 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 271CA3DB1D758EAB00D60691 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 271CA3FD1D758EE600D60691;
+			remoteInfo = broadcastex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		271CA4231D758EE600D60691 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				271CA4191D758EE600D60691 /* broadcastexUI.appex in Embed App Extensions */,
+				271CA41C1D758EE600D60691 /* broadcastex.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		271CA3E31D758EAB00D60691 /* broadcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = broadcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +64,15 @@
 		271CA3EF1D758EAB00D60691 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271CA3F21D758EAB00D60691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		271CA3F41D758EAB00D60691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271CA3FE1D758EE600D60691 /* broadcastex.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = broadcastex.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		271CA4001D758EE600D60691 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		271CA4051D758EE600D60691 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		271CA4071D758EE600D60691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271CA40C1D758EE600D60691 /* broadcastexUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = broadcastexUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		271CA40E1D758EE600D60691 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		271CA4111D758EE600D60691 /* BroadcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastViewController.swift; sourceTree = "<group>"; };
+		271CA4141D758EE600D60691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		271CA4161D758EE600D60691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +83,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		271CA3FB1D758EE600D60691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271CA4011D758EE600D60691 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271CA4091D758EE600D60691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271CA40D1D758EE600D60691 /* ReplayKit.framework in Frameworks */,
+				271CA40F1D758EE600D60691 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				271CA3E51D758EAB00D60691 /* broadcast */,
+				271CA4021D758EE600D60691 /* broadcastex */,
+				271CA4101D758EE600D60691 /* broadcastexUI */,
+				271CA3FF1D758EE600D60691 /* Frameworks */,
 				271CA3E41D758EAB00D60691 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				271CA3E31D758EAB00D60691 /* broadcast.app */,
+				271CA3FE1D758EE600D60691 /* broadcastex.appex */,
+				271CA40C1D758EE600D60691 /* broadcastexUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +138,34 @@
 			path = broadcast;
 			sourceTree = "<group>";
 		};
+		271CA3FF1D758EE600D60691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				271CA4001D758EE600D60691 /* ReplayKit.framework */,
+				271CA40E1D758EE600D60691 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		271CA4021D758EE600D60691 /* broadcastex */ = {
+			isa = PBXGroup;
+			children = (
+				271CA4051D758EE600D60691 /* SampleHandler.swift */,
+				271CA4071D758EE600D60691 /* Info.plist */,
+			);
+			path = broadcastex;
+			sourceTree = "<group>";
+		};
+		271CA4101D758EE600D60691 /* broadcastexUI */ = {
+			isa = PBXGroup;
+			children = (
+				271CA4111D758EE600D60691 /* BroadcastViewController.swift */,
+				271CA4131D758EE600D60691 /* MainInterface.storyboard */,
+				271CA4161D758EE600D60691 /* Info.plist */,
+			);
+			path = broadcastexUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +176,52 @@
 				271CA3DF1D758EAB00D60691 /* Sources */,
 				271CA3E01D758EAB00D60691 /* Frameworks */,
 				271CA3E11D758EAB00D60691 /* Resources */,
+				271CA4231D758EE600D60691 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				271CA4181D758EE600D60691 /* PBXTargetDependency */,
+				271CA41B1D758EE600D60691 /* PBXTargetDependency */,
 			);
 			name = broadcast;
 			productName = broadcast;
 			productReference = 271CA3E31D758EAB00D60691 /* broadcast.app */;
 			productType = "com.apple.product-type.application";
+		};
+		271CA3FD1D758EE600D60691 /* broadcastex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271CA4201D758EE600D60691 /* Build configuration list for PBXNativeTarget "broadcastex" */;
+			buildPhases = (
+				271CA3FA1D758EE600D60691 /* Sources */,
+				271CA3FB1D758EE600D60691 /* Frameworks */,
+				271CA3FC1D758EE600D60691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = broadcastex;
+			productName = broadcastex;
+			productReference = 271CA3FE1D758EE600D60691 /* broadcastex.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		271CA40B1D758EE600D60691 /* broadcastexUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271CA41D1D758EE600D60691 /* Build configuration list for PBXNativeTarget "broadcastexUI" */;
+			buildPhases = (
+				271CA4081D758EE600D60691 /* Sources */,
+				271CA4091D758EE600D60691 /* Frameworks */,
+				271CA40A1D758EE600D60691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = broadcastexUI;
+			productName = broadcastexUI;
+			productReference = 271CA40C1D758EE600D60691 /* broadcastexUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,7 +235,17 @@
 				TargetAttributes = {
 					271CA3E21D758EAB00D60691 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = V5LUS339N6;
+						DevelopmentTeam = SWL8GNACE4;
+						ProvisioningStyle = Automatic;
+					};
+					271CA3FD1D758EE600D60691 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SWL8GNACE4;
+						ProvisioningStyle = Automatic;
+					};
+					271CA40B1D758EE600D60691 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SWL8GNACE4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -118,6 +264,8 @@
 			projectRoot = "";
 			targets = (
 				271CA3E21D758EAB00D60691 /* broadcast */,
+				271CA3FD1D758EE600D60691 /* broadcastex */,
+				271CA40B1D758EE600D60691 /* broadcastexUI */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +278,21 @@
 				271CA3F31D758EAB00D60691 /* LaunchScreen.storyboard in Resources */,
 				271CA3F01D758EAB00D60691 /* Assets.xcassets in Resources */,
 				271CA3EE1D758EAB00D60691 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271CA3FC1D758EE600D60691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271CA40A1D758EE600D60691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271CA4151D758EE600D60691 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +309,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		271CA3FA1D758EE600D60691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271CA4061D758EE600D60691 /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		271CA4081D758EE600D60691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271CA4121D758EE600D60691 /* BroadcastViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		271CA4181D758EE600D60691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 271CA40B1D758EE600D60691 /* broadcastexUI */;
+			targetProxy = 271CA4171D758EE600D60691 /* PBXContainerItemProxy */;
+		};
+		271CA41B1D758EE600D60691 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 271CA3FD1D758EE600D60691 /* broadcastex */;
+			targetProxy = 271CA41A1D758EE600D60691 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		271CA3EC1D758EAB00D60691 /* Main.storyboard */ = {
@@ -163,6 +355,14 @@
 				271CA3F21D758EAB00D60691 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		271CA4131D758EE600D60691 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271CA4141D758EE600D60691 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -264,8 +464,9 @@
 		271CA3F81D758EAB00D60691 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V5LUS339N6;
+				DEVELOPMENT_TEAM = SWL8GNACE4;
 				INFOPLIST_FILE = broadcast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.shou.broadcast;
@@ -277,12 +478,65 @@
 		271CA3F91D758EAB00D60691 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V5LUS339N6;
+				DEVELOPMENT_TEAM = SWL8GNACE4;
 				INFOPLIST_FILE = broadcast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tv.shou.broadcast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		271CA41E1D758EE600D60691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SWL8GNACE4;
+				INFOPLIST_FILE = broadcastexUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.shou.broadcast.broadcastexUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		271CA41F1D758EE600D60691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SWL8GNACE4;
+				INFOPLIST_FILE = broadcastexUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.shou.broadcast.broadcastexUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		271CA4211D758EE600D60691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SWL8GNACE4;
+				INFOPLIST_FILE = broadcastex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.shou.broadcast.broadcastex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		271CA4221D758EE600D60691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = SWL8GNACE4;
+				INFOPLIST_FILE = broadcastex/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tv.shou.broadcast.broadcastex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +560,25 @@
 				271CA3F91D758EAB00D60691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		271CA41D1D758EE600D60691 /* Build configuration list for PBXNativeTarget "broadcastexUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271CA41E1D758EE600D60691 /* Debug */,
+				271CA41F1D758EE600D60691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		271CA4201D758EE600D60691 /* Build configuration list for PBXNativeTarget "broadcastex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271CA4211D758EE600D60691 /* Debug */,
+				271CA4221D758EE600D60691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
